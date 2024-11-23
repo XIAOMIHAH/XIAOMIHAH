@@ -1,1 +1,4 @@
-SELECT * FROM T_BASE_MODEL
+SELECT * FROM T_BASE_MODEL where model_code in (
+select model_code from t_base_model
+
+)
